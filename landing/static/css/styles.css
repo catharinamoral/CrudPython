@@ -3,7 +3,7 @@ h1,p,a,h2,h3,h4{
 }
 
 body{
-    margin-left: 20px;
+    margin: 0;
 }
 
 .titulo-index{
@@ -69,4 +69,99 @@ input{
     padding: 20px;
     width: 80vw;
     box-shadow: lightgrey 5px 5px 20px;
+}
+
+
+.navbar-home{
+    background-color: orange;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.navbar-home a{
+    text-decoration: none;
+    color: darkred;
+    font-size: 20px;
+}
+
+.navbar-home a:hover{
+    background-color: lightyellow;
+    padding: 3vh;
+}
+
+.banner-home{
+    background-image: url(../img/classroom.jpg) ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-home h1{
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    top:120px;
+    left: 550px;
+    width: 40vw;
+    margin: 0;
+}
+
+.texto1-home{
+    display: flex;
+    justify-content: space-around;
+    /* background: yellow; */
+    /* height: 50vh; */
+    /* width: 100%; */
+    margin-top: 20px;
+}
+
+.p-home{
+    /* background: lime; */
+    width: 45vw;
+}
+
+.p-home p{
+    font-size: 17px;
+}
+
+.section-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: cadetblue; */
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login input{
+    width: 45vw;
+}
+
+.entre-login{
+    background-color: orange;
+    padding: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: darkred;
+}
+
+.linkcadastro-login{
+    color: darkred;
+    text-decoration: none;
+    background: none;
+}
+
+.entre-login a:hover{
+    background-color: darkred;
+    color: orange;
 }

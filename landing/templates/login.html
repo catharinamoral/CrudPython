@@ -1,0 +1,15 @@
+{% extends "home.html" %}
+{% load static %}
+{% block content %}
+
+<section class="section-login"> 
+    <h1>Faça o seu login</h1>
+    <form class='form-login' action="/alunos/login" method="post">
+        {% csrf_token %}
+        <input placeholder='Digite seu e-mail' name="email" type="email" required>
+        <input placeholder='Digite sua senha' name="senha" type="password" required>
+        <p>Não possui cadastro? <a class="linkcadastro-login" href="/alunos/cadastro">Cadastre-se</a></p>
+        <a class="entre-login" href="/alunos/lista">Entre</a>
+    </form>
+</section>
+{% endblock %}

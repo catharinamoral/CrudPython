@@ -17,6 +17,14 @@ def index(request):
         
     return render(request, 'index.html')
 
+def login(request):
+    if(request.method == 'POST'):
+        usuario = Usuario()
+        if (usuario.email == request.POST['email']):
+            return
+
+    return render(request, 'login.html')
+
 def listar(request):
     listar_frases = Aluno.objects.filter(ativo = True).all()
     args = {
@@ -30,4 +38,8 @@ def deletar(request):
         item.ativo = False
         item.save()
         return redirect('aluno/listar')
-return render(request, 'lista.html')
+    return redirect('/')
+
+def home(request):
+    return render(request, 'home.html')
+
